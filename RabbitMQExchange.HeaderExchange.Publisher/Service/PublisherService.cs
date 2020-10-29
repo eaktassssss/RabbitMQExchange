@@ -21,8 +21,7 @@ namespace RabbitMQExchange.HeaderExchange.Publisher.Service
                         channel.ExchangeDeclare(exchange: "header-exchange", durable: true, type: ExchangeType.Headers);
                         var propertis = channel.CreateBasicProperties();
                         var header = new Dictionary<string, object>();
-                        header.Add("Format", "PDF"); //Metarial
-                        header.Add("Shape", "A4"); // Type
+                        header.Add("Format", "PDF"); 
                         propertis.Headers = header;
                         propertis.Persistent = true;
                         var body = Encoding.UTF8.GetBytes($"Message={message}");

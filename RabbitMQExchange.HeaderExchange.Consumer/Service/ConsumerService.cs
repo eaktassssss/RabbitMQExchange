@@ -22,7 +22,6 @@ namespace RabbitMQExchange.HeaderExchangeExchange.Consumer.Service
                         var queueName = channel.QueueDeclare("HeaderExchangeQueue", true, false, false, null);
                         var header = new Dictionary<string, object>();
                         header.Add("Format", "PDF");
-                        header.Add("Shape", "A4");
                         header.Add("x-match", "all");
                         channel.QueueBind(queue: queueName, exchange: "header-exchange", routingKey: "", header);
                         channel.BasicQos(0, 1, false);
