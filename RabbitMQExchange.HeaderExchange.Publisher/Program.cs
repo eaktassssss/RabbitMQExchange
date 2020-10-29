@@ -1,10 +1,7 @@
-﻿using RabbitMQ.Client;
-using RabbitMQExchange.DirectExchange.Publisher.Enums;
-using RabbitMQExchange.DirectExchange.Publisher.Service;
+﻿using RabbitMQExchange.HeaderExchange.Publisher.Service;
 using System;
-using System.Text;
 
-namespace RabbitMQExchange.DirectExchange.Publisher
+namespace RabbitMQExchange.HeaderExchange.Publisher
 {
     class Program
     {

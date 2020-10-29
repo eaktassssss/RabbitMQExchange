@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RabbitMQExchange.DirectExchange.Publisher.Enums
+namespace RabbitMQExchange.TopicExchangeExchange.Publisher.Enums
 {
     public enum SelectedLogTypes
     {

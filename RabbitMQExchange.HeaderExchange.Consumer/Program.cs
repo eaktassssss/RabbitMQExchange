@@ -1,11 +1,7 @@
-﻿using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using RabbitMQExchange.DirectExchange.Consumer.Enums;
-using RabbitMQExchange.DirectExchange.Consumer.Service;
+﻿using RabbitMQExchange.HeaderExchangeExchange.Consumer.Service;
 using System;
-using System.Text;
 
-namespace RabbitMQExchange.DirectExchange.Consumer
+namespace RabbitMQExchange.HeaderExchange.Consumer
 {
     class Program
     {
